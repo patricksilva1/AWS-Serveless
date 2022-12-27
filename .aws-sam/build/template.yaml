@@ -12,7 +12,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: PostHandlerLambdaFunction
-      Handler: PostHandler::handleRequest
+      Handler: dev.patricksilva.users.PostHandler::handleRequest
       Runtime: java11
       Architectures:
       - x86_64
@@ -22,7 +22,7 @@ Resources:
           PARAM1: VALUE
           JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1
       Events:
-        AppUsersApi:
+        AppUsers:
           Type: Api
           Properties:
             Path: /users
