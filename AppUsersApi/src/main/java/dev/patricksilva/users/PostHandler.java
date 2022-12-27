@@ -26,7 +26,6 @@ public class PostHandler implements RequestHandler<APIGatewayProxyRequestEvent, 
         userDetails.put("userId", UUID.randomUUID().toString());
 
         // TODO: Process user details
-
         
         Map returnValue = new HashMap();
         returnValue.put("firstName", userDetails.get("firstName"));
