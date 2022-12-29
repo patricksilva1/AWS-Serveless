@@ -33,7 +33,7 @@ Outputs:
   AppUsersApi:
     Description: An API endpoint to create a new User
     Value:
-      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/users
   PostHandlerLambdaFunction:
     Description: PostHandlerLambdaFunction ARN value
     Value:
